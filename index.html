@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather app</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body style="background-image: url('smoke.jpeg'); ">
+  <div class="app-wrap">
+    <header>
+      <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+    </header>
+    <main>
+      <section class="location">
+        <div class="city">Mumbai, IN</div>
+        <div class="date">Tuesday 15 February 2021</div>
+      </section>
+      <section class="current">
+        <div class="temp">15<span>°c</span></div>
+        <div class="weather">Smoke</div>
+        <div class="hi-low">13°c / 16°c</div>
+        <div class="pressure-humidity">
+          <div class="pressure" >Pressure: 1020 </div>
+          <div class="humidity" >Humidity: 20% </div>
+        </div>
+        <div class="icons">
+        <div class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M17 18a5 5 0 0 0-10 0"></path><line x1="12" y1="2" x2="12" y2="9"></line><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line><line x1="1" y1="18" x2="3" y2="18"></line><line x1="21" y1="18" x2="23" y2="18"></line><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line><line x1="23" y1="22" x2="1" y2="22"></line><polyline points="8 6 12 2 16 6"></polyline></svg><div class="sunrise">10:12:34</div></div>
+        <div class="icon"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M17 18a5 5 0 0 0-10 0"></path><line x1="12" y1="9" x2="12" y2="2"></line><line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line><line x1="1" y1="18" x2="3" y2="18"></line><line x1="21" y1="18" x2="23" y2="18"></line><line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line><line x1="23" y1="22" x2="1" y2="22"></line><polyline points="16 5 12 9 8 5"></polyline></svg><div class="sunset">10:12:34</div></div></div>
+      </section>
+    </main>
+</div>
+  <script src="main.js"></script>
+</body>
+</html>
