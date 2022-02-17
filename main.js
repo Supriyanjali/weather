@@ -51,29 +51,10 @@ function displayResults(weather) {
   let humidity = document.querySelector('.current .pressure-humidity .pressure');
   humidity.innerText = `Humidity: ${weather.main.humidity} % `;
 
-  if (weather.weather[0].main == 'Sunny')
-    document.body.style.backgroundImage = "url('sunny.jpeg')"
-
-  else if (weather.weather[0].main == 'Rain')
-    document.body.style.backgroundImage = "url('rainy.jpeg')"
-
-  else if (weather.weather[0].main == 'Clouds')
-    document.body.style.backgroundImage = "url('cloud2.jpeg')"
-
-  else if (weather.weather[0].main == 'Clear')
-    document.body.style.backgroundImage = "url('clear.jpeg')"
-
-  else if (weather.weather[0].main == 'Haze')
-    document.body.style.backgroundImage = "url('haze.jpeg')"
-
-  else if (weather.weather[0].main == 'Snow')
-    document.body.style.backgroundImage = "url('snow.jpeg')"
-
-  else if (weather.weather[0].main == 'Smoke')
-    document.body.style.backgroundImage = "url('smoke.jpeg')"
-
-  else if (weather.weather[0].main == 'Mist')
-    document.body.style.backgroundImage = "url('mist.jpeg')"
+  console.log(weather.weather[0].main)
+  let c=`url(${weather.weather[0].main}.jpeg)`
+  console.log(c)
+  document.body.style.backgroundImage = c
 
 }
 
